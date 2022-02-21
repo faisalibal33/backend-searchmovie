@@ -44,6 +44,6 @@ c.post ('/url', (req, res) => {
   })
 })
 
-c.listen(3000, () => {
-    console.log('running on port 3000')
+c.listen(proces.env.PORT || 3000, () => {
+    console.log(`running on port ${proces.env.PORT}`)
 });
